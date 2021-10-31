@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tour & Travel</title>
+    <title>Healthcare</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,6 +16,456 @@
 
     <link rel="stylesheet" href="./css/app.css" />
     <script src="./app.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img
+          srcset="./images/dot.png 2x"
+          alt=""
+          class="image-dots header-dots"
+        />
+        <div class="container-fluid">
+          <div class="header-main">
+            <img srcset="./images/logo.png 2x" alt="" class="header-logo" />
+            <i class="fas fa-bars menu-toggle"></i>
+            <i class="fas fa-times menu-close"></i>
+            <div class="menu-bg"></div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#!" class="menu-link">Home</a>
+              </li>
+              <li class="menu-item">
+                <a href="#!" class="menu-link">Find a doctor</a>
+              </li>
+              <li class="menu-item">
+                <a href="#!" class="menu-link">Apps</a>
+              </li>
+              <li class="menu-item">
+                <a href="#!" class="menu-link">Testimonials</a>
+              </li>
+              <li class="menu-item">
+                <a href="#!" class="menu-link">About us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container-fluid">
+            <div class="hero-main">
+              <div class="hero-content">
+                <h1 class="hero-heading">Virtual healthcare for you</h1>
+                <div class="hero-desc">
+                  Trafalgar provides progressive, and affordable healthcare,
+                  accessible on mobile and online for everyone
+                </div>
+                <a href="#!" class="button button-primary">Consult today</a>
+              </div>
+              <div class="hero-image">
+                <img srcset="./images/image1.png 2x" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="service">
+          <div class="container">
+            <img
+              srcset="./images/dot.png 2x"
+              alt=""
+              class="image-dots service-dots"
+            />
+            <div class="service-header">
+              <h2 class="heading heading--center">Our services</h2>
+              <div class="text">
+                We provide to you the best choiches for you. Adjust it to your
+                health needs and make sure your undergo treatment with our
+                highly qualified doctors you can consult with us which type of
+                service is suitable for your health
+              </div>
+            </div>
+            <div class="service-list">
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image2.png 2x" />
+                </div>
+                <h3 class="service-title">Search doctor</h3>
+                <div class="service-desc">
+                  Choose your doctor from thousands of specialist, general, and
+                  trusted hospitals
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image3.png 2x" />
+                </div>
+                <h3 class="service-title">Online pharmacy</h3>
+                <div class="service-desc">
+                  Buy your medicines with our mobile application with a simple
+                  delivery system
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image4.png 2x" />
+                </div>
+                <h3 class="service-title">Consultation</h3>
+                <div class="service-desc">
+                  Free consultation with our trusted doctors and get the best
+                  recomendations
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image5.png 2x" />
+                </div>
+                <h3 class="service-title">Details info</h3>
+                <div class="service-desc">
+                  Free consultation with our trusted doctors and get the best
+                  recomendations
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image6.png 2x" />
+                </div>
+                <h3 class="service-title">Emergency care</h3>
+                <div class="service-desc">
+                  You can get 24/7 urgent care for yourself or your children and
+                  your lovely family
+                </div>
+              </div>
+              <div class="service-item">
+                <div class="service-image">
+                  <img alt="" srcset="./images/image7.png 2x" />
+                </div>
+                <h3 class="service-title">Tracking</h3>
+                <div class="service-desc">
+                  Track and save your medical history and health data
+                </div>
+              </div>
+            </div>
+            <a href="#!" class="button button-secondary service-more"
+              >Learn more</a
+            >
+          </div>
+        </section>
+        <section class="feature">
+          <img
+            srcset="./images/dot.png 2x"
+            alt=""
+            class="image-dots feature-dots"
+          />
+          <div class="container-fluid">
+            <div class="feature-item">
+              <div class="feature-image">
+                <img srcset="./images/image9.png 2x" alt="" />
+              </div>
+              <div class="feature-content">
+                <h2 class="heading">Leading healthcare providers</h2>
+                <div class="text feature-desc">
+                  Trafalgar provides progressive, and affordable healthcare,
+                  accessible on mobile and online for everyone. To us, it’s not
+                  just work. We take pride in the solutions we deliver
+                </div>
+                <a href="#!" class="button button-secondary">Learn more</a>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-image">
+                <img srcset="./images/image10.png 2x" alt="" />
+              </div>
+              <div class="feature-content">
+                <h2 class="heading">Download our mobile apps</h2>
+                <div class="text feature-desc">
+                  Our dedicated patient engagement app and web portal allow you
+                  to access information instantaneously (no tedeous form, long
+                  calls, or administrative hassle) and securely
+                </div>
+                <a href="#!" class="button button-secondary">Download</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="testimonial">
+          <img
+            srcset="./images/dot.png 2x"
+            alt=""
+            class="image-dots testimonial-dot1"
+          />
+          <div class="container">
+            <div class="testimonial-main">
+              <img
+                srcset="./images/dot.png 2x"
+                alt=""
+                class="image-dots testimonial-dot2"
+              />
+              <h2 class="heading heading--center testimonial-heading">
+                What our customer are saying
+              </h2>
+              <div class="testimonial-list">
+                <div class="testimonial-content">
+                  <div class="testimonial-customer">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-info">
+                      <h3 class="testimonial-name">Edward Newgate</h3>
+                      <div class="testimonial-job">Founder Circle</div>
+                    </div>
+                  </div>
+                  <div class="testimonial-desc">
+                    “Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely”
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-customer">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-info">
+                      <h3 class="testimonial-name">Edward Newgate</h3>
+                      <div class="testimonial-job">Founder Circle</div>
+                    </div>
+                  </div>
+                  <div class="testimonial-desc">
+                    “Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely”
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-customer">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-info">
+                      <h3 class="testimonial-name">Edward Newgate</h3>
+                      <div class="testimonial-job">Founder Circle</div>
+                    </div>
+                  </div>
+                  <div class="testimonial-desc">
+                    “Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely”
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-customer">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-info">
+                      <h3 class="testimonial-name">Edward Newgate</h3>
+                      <div class="testimonial-job">Founder Circle</div>
+                    </div>
+                  </div>
+                  <div class="testimonial-desc">
+                    “Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely”
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="testimonial-customer">
+                    <div class="testimonial-avatar">
+                      <img
+                        src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80"
+                        alt=""
+                      />
+                    </div>
+                    <div class="testimonial-info">
+                      <h3 class="testimonial-name">Edward Newgate</h3>
+                      <div class="testimonial-job">Founder Circle</div>
+                    </div>
+                  </div>
+                  <div class="testimonial-desc">
+                    “Our dedicated patient engagement app and web portal allow
+                    you to access information instantaneously (no tedeous form,
+                    long calls, or administrative hassle) and securely”
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-navigation"></div>
+          </div>
+        </section>
+        <section class="article">
+          <img
+            srcset="./images/dot.png 2x"
+            alt=""
+            class="image-dots article-dots"
+          />
+          <div class="container">
+            <h2 class="article-heading heading heading--center">
+              Check out our latest article
+            </h2>
+            <div class="article-list">
+              <div class="article-item">
+                <div class="article-image">
+                  <img srcset="./images/image11.png 2x" alt="" />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Disease detection, check up in the laboratoryDisease
+                    detection, check up in the laboratoryDisease detection,
+                    check up in the laboratory
+                  </h3>
+                  <div class="article-desc">
+                    In this case, the role of the health laboratory is very
+                    important to do a disease detection In this case, the role
+                    of the health laboratory is very important to do a disease
+                    detection
+                  </div>
+                  <a href="#!" class="article-details">
+                    <span>Read more</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="article-item">
+                <div class="article-image">
+                  <img srcset="./images/image12.png 2x" alt="" />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Herbal medicines that are safe for consumption
+                  </h3>
+                  <div class="article-desc">
+                    Herbal medicine is very widely used at this time because of
+                    its very good for your health...
+                  </div>
+                  <a href="#!" class="article-details">
+                    <span>Read more</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="article-item">
+                <div class="article-image">
+                  <img srcset="./images/image13.png 2x" alt="" />
+                </div>
+                <div class="article-content">
+                  <h3 class="article-title">
+                    Natural care for healthy facial skin
+                  </h3>
+                  <div class="article-desc">
+                    A healthy lifestyle should start from now and also for your
+                    skin health. There are some...
+                  </div>
+                  <a href="#!" class="article-details">
+                    <span>Read more</span>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="#!" class="button button-secondary center--inline"
+              >View all</a
+            >
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-column">
+              <img src="./images/image14.png" alt="" class="footer-logo" />
+              <div class="footer-desc">
+                Trafalgar provides progressive, and affordable healthcare,
+                accessible on mobile and online for everyone
+              </div>
+              <div class="footer-copyright">
+                ©Trafalgar PTY LTD 2020. All rights reserved
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Company</h3>
+              <ul class="footer-links">
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">About</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Testimonials</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Find a doctor</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Apps</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Region</h3>
+              <ul class="footer-links">
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Indonesia</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Singapore</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Hongkong</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Canada</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-heading">Help</h3>
+              <ul class="footer-links">
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Help center</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Contact support</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">Instructions</a>
+                </li>
+                <li class="footer-item">
+                  <a href="#!" class="footer-link">How it works</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- <div class="dots"></div> -->
+    </div>
+  </body>
 </html>

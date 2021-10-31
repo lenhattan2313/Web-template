@@ -1,0 +1,102 @@
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 0 40px;
+  position: relative;
+  &-link {
+    color: inherit;
+    font-size: 18px;
+    transition: all 0.2s linear;
+    font-weight: 400;
+    &:hover {
+      color: $black;
+      font-weight: 700;
+    }
+  }
+  &-toggle {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  &-bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    background-color: $primary-color;
+    position: fixed;
+    right: 15px;
+    z-index: 0;
+    transform: scale(0);
+    transition: all 0.5s ease;
+    &.active {
+      transform: scale(100);
+    }
+  }
+  &-close {
+    display: none;
+    right: 20px;
+    color: white;
+    z-index: 10;
+    position: fixed;
+    font-size: 26px;
+    &.active {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    flex-direction: column;
+    width: 100%;
+    transition: all 0.2s linear;
+    padding-top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    &.active .menu-item {
+      animation: slideLeft 1s ease forwards 1;
+      animation-delay: 0.1s;
+      &:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      &:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      &:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+    }
+    &-item {
+      width: 100%;
+      transform: translateX(-100%);
+      transition: all 0.2s linear;
+    }
+    &-toggle {
+      display: block;
+    }
+    &-link {
+      display: block;
+      padding: 15px 25px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+  }
+}
+@keyframes slideLeft {
+  to {
+    transform: translate(0, 0);
+  }
+}
